@@ -1,0 +1,29 @@
+{
+  "name": "register_module",
+  "version": "1.0.0",
+  "description": "node js task for user registeration",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albe68/node-js-task-user-register.git"
+  },
+  "keywords": [
+    "task"
+  ],
+  "author": "albert remalin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albe68/node-js-task-user-register/issues"
+  },
+  "homepage": "https://github.com/albe68/node-js-task-user-register#readme",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  }
+}
