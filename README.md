@@ -51,6 +51,8 @@ Request body:
     "cnf_password":"mock_password",
     "login_status": false
 }
+```
+
 >Note: Data validation for payload is strict.
 
 ----
