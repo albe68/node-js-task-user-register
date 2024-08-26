@@ -1,11 +1,11 @@
 # Node.js User Registration
 
-###Overview
+### Overview
 
 This project is a Node.js application that demonstrates user registration using MongoDB for data storage. The application includes functionality for user registration.
 
 ----
-###Prerequisites
+### Prerequisites
 
 Before running the project, ensure you have the following installed:
 
@@ -27,7 +27,7 @@ PORT=8080
 MONGODB_CONNECTION_URI=mongodb://0.0.0.0:27017
 ENV=development
 ----
-####Usage
+#### Usage
 
 1. Start the Server
 
@@ -52,7 +52,7 @@ Request body:
 >Note: Data validation for payload is strict.
 
 ----
-###API Modules
+### API Modules
 
 - [x] User Registeration Module
     - [x] Data Santization
