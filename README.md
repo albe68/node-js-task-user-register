@@ -52,7 +52,7 @@ $ npm start
 Register User
 ```
 
-`POST /api/v1/register-user`
+POST /api/v1/register-user
 
 ```
 
