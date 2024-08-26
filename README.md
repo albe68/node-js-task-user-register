@@ -24,12 +24,20 @@ $ git clone https://github.com/albe68/node-js-task-user-register.git
 $ cd your-repository
 
 ```
-1. Install Dependencies :`$npm install`
+1. Install Dependencies :
 
-2. Create a .env file : 	
+```
+$npm install 
+
+```
+
+2. Create a .env file : 
+
+```dotenv	
 PORT=8080
 MONGODB_CONNECTION_URI=mongodb://0.0.0.0:27017
 ENV=development
+
 ----
 #### Usage
 
