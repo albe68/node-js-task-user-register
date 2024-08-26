@@ -17,9 +17,13 @@ Before running the project, ensure you have the following installed:
 
 - Clone the repository
 
-`$ git clone https://github.com/albe68/node-js-task-user-register.git`
-`$ cd your-repository`
+```
+$ git clone https://github.com/albe68/node-js-task-user-register.git
+```
+```
+$ cd your-repository
 
+```
 1. Install Dependencies :`$npm install`
 
 2. Create a .env file : 	
