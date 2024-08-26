@@ -40,6 +40,8 @@ Register User
 - `POST /api/v1/register-user`
 
 Request body:
+
+```json
 {
     "full_name":"mock_full name",
     "user_name":"mock_username",
