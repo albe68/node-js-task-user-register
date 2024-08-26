@@ -27,7 +27,7 @@ $ cd your-repository
 1. Install Dependencies :
 
 ```
-$npm install 
+$ npm install 
 
 ```
 
@@ -42,14 +42,19 @@ ENV=development
 #### Usage
 
 1. Start the Server
+```
+$ npm start
 
-`$ npm start`
+```
 
 2. Hit API Endpoints
 
 Register User
+```
 
-- `POST /api/v1/register-user`
+`POST /api/v1/register-user`
+
+```
 
 Request body:
 
