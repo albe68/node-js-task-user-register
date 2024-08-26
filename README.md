@@ -1,4 +1,4 @@
-# Node.js User Registration and Authentication
+# Node.js User Registration
 
 ###Overview
 
