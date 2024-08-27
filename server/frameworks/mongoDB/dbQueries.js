@@ -5,7 +5,7 @@ export const createUser = async (body) => {
     await userModel.create(body);
     console.log("success: query ");
   } catch (error) {
-    console.log("failed: query ", error.message);
+    console.log("failed: query", error.message);
   }
 };
 

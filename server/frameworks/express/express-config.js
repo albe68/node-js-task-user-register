@@ -7,6 +7,7 @@ import { envConfig } from "../../config.js";
 
   
 export const expressConfig = (express, app) => {
+  
   app.use(cors());
 
   app.use(express.json());
