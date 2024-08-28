@@ -1,8 +1,8 @@
-import { model, Schema, Types } from "mongoose";
+import { model, Schema } from "mongoose";
 
 const userSchema = new Schema(
   {
-    id: { type: Number },
+    user_id: { type: Number },
     full_name: { type: String },
     user_name: { type: String },
     email: { type: String },
@@ -12,6 +12,7 @@ const userSchema = new Schema(
   },
   { timestamps: true }
 );
+//if _id is set false in schema what will happen if findAndUpdateByID functions cause they need _id s
 
 const autoGenerateSchema = new Schema(
   {
@@ -22,4 +23,8 @@ const autoGenerateSchema = new Schema(
 );
 
 export const userModel = model("userModel", userSchema, "User Collection");
-export const autoGenModel = model("autoGenModel",autoGenerateSchema,"Auto Gen Collection");
+export const autoGenModel = model(
+  "autoGenModel",
+  autoGenerateSchema,
+  "Auto Gen Collection"
+);
