@@ -23,7 +23,7 @@ export const authCtrl = async (req, res) => {
     //compare cnf password validation done in express-validator
 
     const user = await getUserByEmail(email);
-    console.log("updated Doc")
+    console.log("updated Doc");
 
     if (user) {
       throw new Error("User already exsists");
@@ -49,7 +49,7 @@ export const authCtrl = async (req, res) => {
       seqId = userCustomId.sequence;
     }
     body.user_id = seqId;
-    console.log(body,"updated Doc")
+    console.log(body, "updated Doc");
     await createUser(body);
 
     return res.status(200).json({
@@ -71,6 +71,9 @@ export const getUserCtrl = async (req, res) => {
     const userId = req.params.user_id;
     //exclude password to client
     const user = await getUserByID(userId);
+    if (!user) {
+      throw new Error("Provide valid user_id");
+    }
     const { password, ...userObj } = user._doc;
     return res.status(200).json({
       status: "success",
@@ -91,7 +94,7 @@ export const getAllUsersCtrl = async (req, res) => {
 
     if (!users) {
       throw new Error("No users found ! Please insert users data");
-    }
+    };
     const { password, ...allUsers } = users;
     return res.status(200).json({
       status: "success",
