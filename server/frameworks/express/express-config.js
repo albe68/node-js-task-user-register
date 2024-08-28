@@ -1,5 +1,4 @@
 
-import cors from "cors";
 import morgan from "morgan";
 import { envConfig } from "../../config.js";
 
@@ -7,8 +6,6 @@ import { envConfig } from "../../config.js";
 
   
 export const expressConfig = (express, app) => {
-  
-  app.use(cors());
 
   app.use(express.json());
 
