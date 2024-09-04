@@ -12,18 +12,17 @@ import { autoGenModel } from "../mongoDB/model.js";
 
 export const authCtrl = async (req, res) => {
   try {
-    const errors = validationResult(req);
+    // const errors = validationResult(req);
 
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
+    // if (!errors.isEmpty()) {
+    //   return res.status(400).json({ errors: errors.array() });
+    // }
     const body = req.body;
     const { email, password } = req.body;
 
     //compare cnf password validation done in express-validator
 
     const user = await getUserByEmail(email);
-    console.log("updated Doc");
 
     if (user) {
       throw new Error("User already exsists");
@@ -49,7 +48,6 @@ export const authCtrl = async (req, res) => {
       seqId = userCustomId.sequence;
     }
     body.user_id = seqId;
-    console.log(body, "updated Doc");
     await createUser(body);
 
     return res.status(200).json({

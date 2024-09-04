@@ -3,7 +3,7 @@
 import express from "express";
 import { dbConnection } from "./frameworks/mongoDB/dbConnection.js";
 import { router } from "./frameworks/express/routes.js";
-import { expressConfig } from "./frameworks/express/express-config.js";
+import { expressConfig } from "./frameworks/express/app.js";
 
 const app = express();
 
@@ -21,3 +21,5 @@ expressConfig(express, app);
  */
 
 router(app);
+
+export {app};

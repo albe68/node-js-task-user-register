@@ -1,7 +1,7 @@
 "use strict";
 
 import mongoose from "mongoose";
-import { envConfig } from "../../config.js";
+import { envConfig } from "../../../config.js";
 
 export const dbConnection = () => {
   mongoose

@@ -10,8 +10,9 @@ import {
 import { validateUser } from "../utils/utils.js";
 
 export const router = async (app) => {
+  //validateUser
 
-  app.post("/api/v1/register-user", validateUser, authCtrl);
+  app.post("/api/v1/register-user", authCtrl);
 
   app.get("/api/v1/get-user-by-id/:user_id", getUserCtrl);
 
